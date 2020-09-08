@@ -1,4 +1,4 @@
-# Canvas Page View Log
+# Canvas Page View
 This project downloads the page views for specified Canvas users and outputs a CSV for each user with the following headers:
 * 'id'
 * 'app_name'
