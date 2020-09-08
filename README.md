@@ -42,6 +42,9 @@ An example `CANVAS_API_DOMAIN` is `https://{school}.instructure.com/api/v1`
 1. Run the script. `npm start`.
 1. An `{Canvas user id}-pageviews.csv` file should be generated for each Canvas user id.
 
+## Note
+Please note that this project downloads `remote-ip`, which is the origin IP address of the request. IP addresses are considered personal information and should be treated with care. Sharing IP addresses of students without formal approval from an Associate Dean is not permitted. Please contact the [LTHub](mailto:lt.hub@ubc.ca) if you have any questions or concerns.
+
 ## Authors
 
 * [justin0022](https://github.com/justin0022) -
