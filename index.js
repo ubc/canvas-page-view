@@ -10,4 +10,4 @@ const getPageViewsForUsers = (studentIds, startTime, endTime) => {
   )
 }
 
-getPageViewsForUsers([15641], '2020-05-18T00:00:00Z', '2020-09-03T00:00:00Z')
+getPageViewsForUsers([/* add Canvas user IDs */], /* add start date */, /* add end date */)

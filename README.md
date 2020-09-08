@@ -33,7 +33,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Run the installation script. `npm install` (If you see `babel-node: command not found`, you've missed this step.)
 1. Generate Canvas API token and copy it to clipboard.
 1. Rename the `sample.env` file to `.env`, and add your API token to `CANVAS_API_TOKEN=`.
-1. Add your Canvas user IDs to `index.js`, as well as the start time and end time, where it says: `getPageViewsForUsers([/* add Canvas Ids*/], '/* add start date */', '/* add end date */')`
+1. Add your Canvas user IDs to `index.js`, as well as the start time and end time, where it says: `getPageViewsForUsers([/* add Canvas user IDs */], /* add start date */, /* add end date */)`
 1. The start and end times should be specified in UTC time like this: `2020-05-18T00:00:00Z`
 1. Run the script. `npm start`.
 1. An `{Canvas id}-pageviews.csv` file should be generated for each Canvas user id.
