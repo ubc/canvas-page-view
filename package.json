@@ -1,0 +1,19 @@
+{
+  "name": "canvas-page-view-log",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bottleneck": "^2.19.5",
+    "dotenv": "^8.2.0",
+    "node-canvas-api": "^1.5.8",
+    "parse-link-header": "^1.0.1",
+    "request-promise": "^4.2.6"
+  }
+}
