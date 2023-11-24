@@ -34,7 +34,7 @@ An example `CANVAS_API_DOMAIN` is `https://{school}.instructure.com/api/v1`
 
 ### Installation and execution of script
 
-1. Clone this repo. `git clone https://github.com/ubccapico/canvas-page-view`
+1. Clone this repo. `git clone https://github.com/ubc/canvas-page-view`
 1. Then cd into the repo. `cd canvas-page-view`
 1. Run the installation script. `npm install` (If you see `babel-node: command not found`, you've missed this step.)
 1. Add your Canvas user IDs to `index.js`, as well as the start time and end time, where it says: `getPageViewsForUsers([/* add Canvas user IDs */], /* add start date */, /* add end date */)`
