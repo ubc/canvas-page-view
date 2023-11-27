@@ -26,8 +26,10 @@ const writeToCSV = (data, filename) => {
     'remote_ip',
     'links' + '\r\n'
   ]
+  // Convert the header array to a string
+  const headerString = header.join(',');
 
-  writeHeader(csv, header)
+  writeHeader(csv, headerString)
 
   const expandedData = data
     .map(pageView => [
