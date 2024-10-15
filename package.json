@@ -12,8 +12,8 @@
   "dependencies": {
     "bottleneck": "^2.19.5",
     "dotenv": "^8.2.0",
-    "node-canvas-api": "^1.5.8",
-    "parse-link-header": "^1.0.1",
+    "node-canvas-api": "^1.7.6",
+    "parse-link-header": "^2.0.0",
     "request-promise": "^4.2.6"
   }
 }
