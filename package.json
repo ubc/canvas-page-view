@@ -15,5 +15,11 @@
     "node-canvas-api": "^1.7.6",
     "parse-link-header": "^2.0.0",
     "request-promise": "^4.2.6"
+  },
+  "overrides": {
+    "request": {
+      "form-data": "2.5.4"
+    },
+    "tough-cookie": "4.1.3"
   }
 }
