@@ -1,13 +1,14 @@
-const fs = require('fs')
-const path = require('path')
-const { promisify } = require('util')
-const fswrite = promisify(fs.writeFile)
+import { writeFile } from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const writeHeader = (pathToFile, file) => fswrite(pathToFile, file)
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
 const escapeComment = comment => comment ? '"' + comment.replace(/"/g, "'") + '"' : ''
 
-const writeToCSV = (data, filename) => {
-  const csv = path.join(__dirname, '/output/', filename)
+const writeToCSV = async (data, filename) => {
+  const csv = path.join(__dirname, 'output', filename)
 
   const header = [
     'id',
@@ -26,10 +27,6 @@ const writeToCSV = (data, filename) => {
     'remote_ip',
     'links' + '\r\n'
   ]
-  // Convert the header array to a string
-  const headerString = header.join(',');
-
-  writeHeader(csv, headerString)
 
   const expandedData = data
     .map(pageView => [
@@ -51,7 +48,7 @@ const writeToCSV = (data, filename) => {
     ].join(',') + '\r\n')
 
   expandedData.unshift(header)
-  writeHeader(csv, expandedData.join(''))
+  await writeFile(csv, expandedData.join(''))
 }
 
-module.exports = writeToCSV
+export default writeToCSV
